@@ -1,0 +1,5 @@
+To start an SSH session with hostname, username, password in a single putty command:
+
+putty.exe username@hostname -pw password
+<or>
+putty.exe hostname -l username -pw password
