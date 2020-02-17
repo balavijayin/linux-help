@@ -1,0 +1,16 @@
+Environment variables to be set for psql
+
+export PGHOST=$1
+export PGUSER=$2
+export PGPASSWORD=$3
+export PGPORT=5432
+
+JDBC URL with SSL enabled
+
+jdbc:postgresql://<domain>:5432/<db>?sslmode=require
+
+Connect to postgresql database 
+psql -U <username> -h <domain> -p 5432 -d postgres -W
+
+Connect to postgresql database and run sql script file
+psql -U <username> -h <domain> -p 5432 -d postgres -W -f db-script.sql
