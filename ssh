@@ -1,0 +1,3 @@
+Compress and copy to other machine without saving in source
+
+tar zcvf -  <folderToBeCopied> | ssh user@server "cat > <destinationPath>/compressedFile.tgz"
